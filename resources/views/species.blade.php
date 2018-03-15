@@ -50,8 +50,8 @@
 			<td>{{ $specie->species_id }}</td>
 			<td>{{ $specie->species_description }}</td>
 			<td>
-				<a href="@php echo url('edit/species/').{{ $specie->species_id }} @endphp">edit</a>
-				<a href="@php echo url('delete/species/').{{ $specie->species_id }} @endphp">delete</a>
+				<a href="{{ url('edit/species/')."/".$specie->species_id }}">edit</a>
+				<a href="{{ url('delete/species/')."/".$specie->species_id }}">delete</a>
 			</td>
 
 		</tr>

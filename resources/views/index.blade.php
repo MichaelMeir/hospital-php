@@ -103,8 +103,8 @@
 			<td>{{ $patient->gender }}</td>
 
 			<td>
-				<a href="@php echo url('edit/patients/').{{ $patient->patient_id }} @endphp">edit</a>
-				<a href="@php echo url('delete/patients').{{ $patient->patient_id }} @endphp">delete</a>
+				<a href="{{ url('edit/patients/')."/".$patient->patient_id }}">edit</a>
+				<a href="{{ url('delete/patients')."/".$patient->patient_id }}">delete</a>
 			</td>
 
 		</tr>
