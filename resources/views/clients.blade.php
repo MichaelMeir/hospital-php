@@ -74,8 +74,8 @@
 			<td>{{ $client->client_phone }}</td>
 			<td>{{ $client->client_email }}</td>
 			<td>
-				<a href="edit/clients/{{ $client->client_id }}">edit</a>
-				<a href="delete/clients/{{ $client->client_id }}">delete</a>
+				<a href="@php echo url('edit/clients') @endphp{{ $client->client_id }}">edit</a>
+				<a href="@php echo url('delete/clients') @endphp{{ $client->client_id }}">delete</a>
 			</td>
 
 		</tr>
